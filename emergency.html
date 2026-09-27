@@ -1,0 +1,61 @@
+
+<nav>
+  <div class="container nav-inner">
+    <a class="logo" href="index.html">DriveShield <span>AI</span></a>
+    <button class="menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <div class="nav-links">
+      <a href="index.html#problem">Problem</a>
+      <a href="index.html#solution">Solution</a>
+      <a href="index.html#architecture">Architecture</a>
+      <a href="index.html#technology">Technology</a>
+      <a href="index.html#feedback">Feedback</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<section class="detail-hero">
+ <div class="container">
+  <a class="back" href="index.html">← Back to DriveShield AI</a>
+  <div class="detail-grid">
+   <div>
+    <div class="kicker">Solution</div>
+    <h1 class="detail-title">Emergency Assistance</h1>
+    <p class="detail-copy">A dedicated workflow for SOS, trusted contacts and location information during an emergency.</p>
+    <div class="pills"><span class="pill">SOS</span><span class="pill">Trusted contacts</span><span class="pill">Location</span><span class="pill">Emergency workflow</span></div>
+   </div>
+   <img class="feature-img" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=85" alt="Emergency Assistance">
+  </div>
+ </div>
+</section>
+<section>
+ <div class="container">
+  <div class="section-head"><div class="kicker">How it works</div><h2>Simple <span>flow.</span></h2><p>The feature is designed as a modular layer inside the DriveShield AI ecosystem.</p></div>
+  <div class="flow"><div class="card"><div class="icon">✓</div><h3>Step 1</h3><p>Emergency condition or user action starts workflow.</p></div><div class="card"><div class="icon">✓</div><h3>Step 2</h3><p>Latest available location is attached.</p></div><div class="card"><div class="icon">✓</div><h3>Step 3</h3><p>Configured contacts/services can be notified.</p></div><div class="card"><div class="icon">✓</div><h3>Step 4</h3><p>Dashboard records the event state.</p></div></div>
+  <div class="detail-note"><strong>Prototype note:</strong> hardware availability, sensor accuracy, vehicle compatibility and emergency integrations depend on the final implementation and supported devices.</div>
+ </div>
+</section>
+<section>
+ <div class="container">
+  <div class="section-head"><div class="kicker">Integration</div><h2>Connected to the <span>main dashboard.</span></h2></div>
+  <div class="grid">
+   <div class="card"><div class="icon">📱</div><h3>App Layer</h3><p>Shows the current state in a simple driver-friendly interface.</p></div>
+   <div class="card"><div class="icon">☁️</div><h3>Cloud Layer</h3><p>Can store permitted trip, event and device information for the project.</p></div>
+   <div class="card"><div class="icon">🔐</div><h3>Safety Layer</h3><p>Applies thresholds, permissions and alert logic before presenting actions.</p></div>
+  </div>
+  <div class="btns"><a class="btn primary" href="index.html#solution">← All Solutions</a><a class="btn secondary" href="index.html#feedback">Give Feedback</a></div>
+ </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <strong>DriveShield AI</strong> — Safe Drive • Smart Tech • Better You
+    <br><span>AI-powered driver monitoring & connected vehicle safety ecosystem.</span>
+  </div>
+</footer>
+<script>
+document.querySelectorAll('.nav-links a').forEach(a=>{
+  a.addEventListener('click',()=>document.querySelector('.nav-links')?.classList.remove('open'));
+});
+</script>
